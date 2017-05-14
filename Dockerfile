@@ -4,4 +4,4 @@ MAINTAINER Zeyu Ye <Shuliyey@gmail.com>
 
 ENTRYPOINT []
 
-CMD ["bash"]
+CMD ["ash"]
