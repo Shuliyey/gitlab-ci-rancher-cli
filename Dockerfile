@@ -3,7 +3,7 @@ FROM rancher/cli
 MAINTAINER Zeyu Ye <Shuliyey@gmail.com>
 
 RUN apk add --update \
-  py-pip
+  py-pip jq
 
 RUN pip install --upgrade pip \
   && pip install j2cli[yaml]
