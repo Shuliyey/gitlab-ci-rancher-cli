@@ -7,6 +7,7 @@ ADD https://github.com/rancher/cli/releases/download/v0.6.1-rc1/rancher-linux-am
 RUN cd / \
   && tar zxvf rancher-linux-amd64-v0.6.1-rc1.tar.gz \
   && mv rancher-v0.6.1-rc1/rancher /usr/bin/rancher \
+  && modprobe ipv6 \
   && echo "ipv6" >> /etc/modules
 
 RUN apk add --update \
